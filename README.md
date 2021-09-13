@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TaskTracker
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
@@ -25,3 +26,26 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+## Angular Crash Course 2021 (Task Tracker App) with task editing functionality
+
+### Usage
+
+#### Install dependencies
+
+```
+npm install
+```
+
+#### Run Angular server (http://localhost:4200)
+
+```
+ng serve
+```
+
+#### Run the JSON server (http://localhost:5000)
+
+```
+npm run server
+```
+>>>>>>> 8abc881f848d6747c6d216641d2728d11cedf429
