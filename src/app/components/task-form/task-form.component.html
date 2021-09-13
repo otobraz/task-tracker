@@ -1,0 +1,36 @@
+<form *ngIf="showForm" class="add-form" (ngSubmit)="onSubmit(isEditing)">
+   <div class="form-control">
+      <label for="text">Task</label>
+      <input
+         type="text"
+         name="text"
+         id="text"
+         placeholder="Add Task"
+         [(ngModel)]="text"
+         value="{{ isEditing ? text : '' }}"
+      />
+   </div>
+   <div class="form-control">
+      <label for="day">Day</label>
+      <input
+         type="text"
+         name="day"
+         id="day"
+         placeholder="Add Day & Time"
+         [(ngModel)]="day"
+         value="{{ isEditing ? day : '' }}"
+      />
+   </div>
+   <div class="form-control form-control-check">
+      <label for="reminder">Set Reminder</label>
+      <input
+         type="checkbox"
+         name="reminder"
+         id="reminder"
+         [(ngModel)]="reminder"
+      />
+   </div>
+   <button class="btn btn-block">
+      {{ isEditing ? "Update Task" : "Add Task" }}
+   </button>
+</form>
